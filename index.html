@@ -29,12 +29,17 @@
         h1 {
             font-family: 'Dancing Script', cursive;
             text-align: center; /* Centra el título */
+            margin-top: 20px; /* Añade un margen superior */
+            margin-bottom: 20px; /* Añade un margen inferior */
         }
 
         /* Estilo para el párrafo */
         p {
             font-family: 'Shadows Into Light', cursive;
             text-align: center; /* Centra el párrafo */
+            font-size: 1em; /* Ajustado para móviles */
+            line-height: 1.5; /* Ajustado para móviles */
+            margin: 0 15px; /* Añadido margen horizontal */
         }
 
         /* Estilo para el botón de subir al inicio */
@@ -67,11 +72,37 @@
             color: #007bff; /* Color del texto del enlace */
             text-decoration: none; /* Elimina el subrayado del enlace */
             font-family: 'Shadows Into Light', cursive; /* Fuente del enlace */
-            font-size: 18px; /* Tamaño del texto del enlace */
+            font-size: 1em; /* Ajustado para móviles */
         }
 
         .card-body a:hover {
             text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+        }
+
+        /* Ajustes específicos para dispositivos móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em; /* Ajusta el tamaño del título */
+            }
+
+            .card-body p {
+                font-size: 1em; /* Ajusta el tamaño del texto en las tarjetas */
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.2em; /* Ajusta el tamaño del título en pantallas pequeñas */
+            }
+
+            .texto {
+                font-size: 0.9em; /* Ajusta el tamaño del texto */
+            }
+
+            .btn-subir {
+                padding: 8px 16px; /* Ajusta el padding del botón */
+                font-size: 0.9em; /* Ajusta el tamaño de la fuente del botón */
+            }
         }
     </style>
 </head>
