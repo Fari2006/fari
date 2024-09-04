@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página web</title>
+    <title>Tu página web</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Imagen de fondo para todo el body */
         body {
@@ -21,9 +22,6 @@
         /* Estilo para el texto */
         .texto {
             font-family: 'Shadows Into Light', cursive;
-            margin-top: 20px; /* Espacio arriba del texto */
-            max-width: 600px; /* Ajusta el ancho máximo del texto */
-            margin: 0 auto; /* Centra el texto */
             text-align: center; /* Centra el texto */
         }
 
@@ -41,9 +39,8 @@
 
         /* Estilo para el botón de subir al inicio */
         .btn-subir {
-            position: fixed; /* Fija el botón en una posición fija */
-            bottom: 20px; /* Espacio desde la parte inferior de la ventana */
-            right: 20px; /* Espacio desde el lado derecho de la ventana */
+            display: block;
+            margin: 40px auto 0; /* Centra el botón y añade espacio superior */
             padding: 10px 20px; /* Espacio interno del botón */
             background-color: #007bff; /* Color de fondo del botón */
             color: #fff; /* Color del texto del botón */
@@ -58,19 +55,72 @@
         .btn-subir:hover {
             background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
         }
+
+        /* Estilo para los botones dentro del grid */
+        .card {
+            margin-bottom: 20px; /* Espacio inferior entre las tarjetas */
+        }
+
+        .card-body a {
+            display: block;
+            text-align: center; /* Centra el enlace */
+            color: #007bff; /* Color del texto del enlace */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            font-family: 'Shadows Into Light', cursive; /* Fuente del enlace */
+            font-size: 18px; /* Tamaño del texto del enlace */
+        }
+
+        .card-body a:hover {
+            text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+        }
     </style>
 </head>
 <body>
     <h1>¡Mi ingeniero favorito!</h1>
-    <p>Con mucho cariño</p>
+
+    <!-- Grid de texto -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="triste.jpg" class="card-img-top" alt="Imagen de Fondo">
+                    <div class="card-body">
+                        <p class="texto">Página 1: Leeme cuando estés triste.</p>
+                        <a href="pagina1.html">Ir a Página 1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="feliz.jpg" class="card-img-top" alt="Imagen de Fondo">
+                    <div class="card-body">
+                        <p class="texto">Página 2: Leeme cuando estés feliz.</p>
+                        <a href="pagina2.html">Ir a Página 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="cansada.jpg" class="card-img-top" alt="Imagen de Fondo">
+                    <div class="card-body">
+                        <p class="texto">Página 3: Leeme cuando sientas que ya no puedes más.</p>
+                        <a href="pagina3.html">Ir a Página 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Texto sin imagen -->
     <p class="texto">Mi niño bonito, con esfuerzo, dedicación, amor, apoyo y primeramente con la ayuda de Dios sé que puedes lograr cualquier cosa que te propongas, sé que puedes lograr todas esas metas que tienes por delante y te diré mi inge, si se pudo. Sé que no eres ese tipo de persona que se rinde fácilmente de algo y por eso te admiro demasiado, mi inge bonito.
         1 Corintios 13:4-7 El amor es sufrido, es benigno; el amor no tiene envidia, el amor no es jactancioso, no se envanece;  no hace nada indebido, no busca lo suyo, no se irrita, no guarda rencor;  no se goza de la injusticia, mas se goza de la verdad. Todo lo sufre, todo lo cree, todo lo espera, todo lo soporta.<br>
        Con mucho amor y cariño, tu novia.<br>
     </p>
-    
-    <!-- Botón para subir al inicio -->
+
+    <!-- Botón para subir al inicio, centrado al final del texto -->
     <a href="#" class="btn-subir">Subir al inicio</a>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
