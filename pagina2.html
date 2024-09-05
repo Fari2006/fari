@@ -11,13 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sevillana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sevillana&family=Sofia&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Evita el desbordamiento horizontal */
+        }
+
         body {
             background-image: url('fondo3.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
             font-family: 'Shadows Into Light', cursive;
             color: #333;
         }
@@ -29,6 +33,7 @@
             background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
             border-radius: 10px;
             text-align: center;
+            box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total */
         }
 
         h1 {
@@ -91,7 +96,7 @@
     <div class="container">
         <h1>Cuando estés feliz.</h1>
         <p style="font-family: 'Sofia', cursive;">Mi amor, en cada sonrisa tuya veo el reflejo del amor de Dios, no sabes la alegría que me da saber que estás feliz, porque sé que el Señor ha puesto su gracia y bendición en tu vida. Que sigas brillando con esa luz que llevas dentro, y que juntos podamos agradecerle a Dios por todas las bendiciones que nos regala día a día, te quiero demasiado y le agradezco tanto a Dios por haberte puesto en mi camino, en mi vida.</p>
-        <p style="font-family: 'Sofia', cursive;">Aunque estemos lejos, mi amor por tí noconoce fronteras, siento que Dios une nuestros corazones con un lazo tan fuerte que ninguna distancia puede romper. Cada día que pasa oro para que el Señor te cuide y nos mantenga firme en su amor, hasta el día en que podamos vernos y estar juntos uno al lado del otro de nuevo. Aunque no pueda abrazarte ahora, sé que nuestras almas están siempre conectadas por su gracia, te quiero con todo mi corazón.</p>
+        <p style="font-family: 'Sofia', cursive;">Aunque estemos lejos, mi amor por ti no conoce fronteras, siento que Dios une nuestros corazones con un lazo tan fuerte que ninguna distancia puede romper. Cada día que pasa oro para que el Señor te cuide y nos mantenga firmes en su amor, hasta el día en que podamos vernos y estar juntos uno al lado del otro de nuevo. Aunque no pueda abrazarte ahora, sé que nuestras almas están siempre conectadas por su gracia, te quiero con todo mi corazón.</p>
         <p style="font-family: 'Sofia', cursive;">Me mostrarás la senda de la vida; en tu presencia hay plenitud de gozo; delicias a tu diestra para siempre. -Salmos_16:11.</p>
         <p style="font-family: 'Sofia', cursive;">El entendido en la palabra hallará el bien, y el que confía en Jehová es bienaventurado. -Proverbios_16:20.</p>
         <p style="font-family: 'Sofia', cursive;">Regocijaos en el Señor siempre. Otra vez digo: ¡Regocijaos!. -Filipenses_4:4.</p>
@@ -102,3 +107,4 @@
     </div>
 </body>
 </html>
+
